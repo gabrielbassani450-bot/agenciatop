@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Agência Criativa Web</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Bem-vindo à Agência Criativa Web</h2>
+            <p>Transformamos ideias em experiências digitais incríveis. Seu parceiro em design e desenvolvimento web.</p>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma agência especializada em design digital, focada em criar soluções inovadoras e personalizadas para nossos clientes. Nossos valores incluem criatividade, qualidade e compromisso com resultados.</p>
+            <img src="https://via.placeholder.com/600x400?text=Sobre+Nos" alt="Equipe da Agência" srcset="https://via.placeholder.com/300x200?text=Sobre+Nos 300w, https://via.placeholder.com/600x400?text=Sobre+Nos 600w">
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="grid-servicos">
+                <div class="servico">
+                    <h3>Design Gráfico</h3>
+                    <p>Criamos identidades visuais marcantes e materiais gráficos para sua marca.</p>
+                </div>
+                <div class="servico">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Desenvolvemos sites responsivos e funcionais com as melhores tecnologias.</p>
+                </div>
+                <div class="servico">
+                    <h3>Branding</h3>
+                    <p>Ajudamos a construir e fortalecer a imagem da sua marca no mercado.</p>
+                </div>
+                <div class="servico">
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias eficazes para aumentar sua presença online e engajar seu público.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="depoimento">
+                <p>"A Agência Criativa Web transformou nosso site em uma obra-prima. Recomendo!"</p>
+                <cite>- João Silva, CEO da TechCorp</cite>
+            </div>
+            <div class="depoimento">
+                <p>"Profissionais incríveis, atendimento de primeira. Resultados além das expectativas."</p>
+                <cite>- Maria Oliveira, Empreendedora</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contato-info">
+                <p><strong>Endereço:</strong> Rua Fictícia, 123 - Cidade, Estado</p>
+                <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                <p><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>
+            </div>
+            <form class="form-contato">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Agência Criativa Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
